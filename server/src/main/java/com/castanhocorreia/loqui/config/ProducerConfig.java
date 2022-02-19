@@ -1,6 +1,6 @@
 package com.castanhocorreia.loqui.config;
 
-import com.castanhocorreia.loqui.domain.MessageModel;
+import com.castanhocorreia.loqui.domain.Message;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -32,12 +32,12 @@ public class ProducerConfig {
   }
 
   @Bean
-  public ProducerFactory<String, MessageModel> factory() {
+  public ProducerFactory<String, Message> factory() {
     return new DefaultKafkaProducerFactory<>(config());
   }
 
   @Bean
-  public KafkaTemplate<String, MessageModel> template() {
+  public KafkaTemplate<String, Message> template() {
     return new KafkaTemplate<>(factory());
   }
 }
