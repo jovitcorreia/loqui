@@ -14,6 +14,26 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
     command: sh -c "((sleep 15 && kafka-topics --create --zookeeper zookeeper:2181 --replication-factor 1 --partitions 3 --topic chat)&) && /etc/confluent/docker/run"
+  loqui_client:
+    container_name: loqui_client
+    image: loqui-client
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    depends_on:
+      - loqui_server
+    restart: always
+    network_mode: host
+  loqui_server:
+    container_name: loqui_server
+    image: loqui-server
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    depends_on:
+      - kafka
+    restart: always
+    network_mode: host
   zookeeper:
     image: confluentinc/cp-zookeeper:latest
     environment:
