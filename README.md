@@ -13,7 +13,7 @@ LOQUI is a simple real-time chat application that demonstrates how to use Apache
 **This project is a case study and should not be used for any real purpose**
 
 
-### Technologies Used
+### Technologies
 
 - [Apache Kafka](https://kafka.apache.org/)
 - [Axios](https://github.com/axios/axios)
