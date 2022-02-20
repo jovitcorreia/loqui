@@ -6,7 +6,7 @@
   <h6 align="center">Real-time chat application built using Apache Kafka, Java, Spring Boot, SockJS and React</h6>
 </div>
 
-### About the Project
+### About
 
 LOQUI is a simple real-time chat application that demonstrates how to use Apache Kafka as a message broker along with Java, Spring Boot and React on the front-end
 
@@ -34,7 +34,7 @@ LOQUI is a simple real-time chat application that demonstrates how to use Apache
 
 Clone the project, and run the following command in the root directory:
 
-```
+```bash
 docker-compose up -d --build
 ```
 
