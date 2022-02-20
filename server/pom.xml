@@ -58,6 +58,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>loqui</finalName>
 	</build>
 
 </project>
