@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/castanhocorreia/loqui">
     <img src="icon.svg" alt="Logo" width="80" height="80">
   </a>
   <h3 align="center">LOQUI</h2>
