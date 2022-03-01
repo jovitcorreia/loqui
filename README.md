@@ -26,11 +26,10 @@ LOQUI is a simple real-time chat application that demonstrates how to use Apache
 
 ### Requisites
 
-- Docker version 20 or higher
-- docker-compose version 1 or higher
+- Docker version 20 or higher and docker-compose
 - Ports 3000, 8080, 22181 and 29092
 
-### Instalation
+### Installation
 
 Clone the project, and run the following command in the root directory:
 
